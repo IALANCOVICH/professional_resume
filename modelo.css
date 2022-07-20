@@ -1,0 +1,204 @@
+* {
+    padding: auto;
+    margin: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#ialan {
+    margin: 30px;
+    margin-top: 80px;
+    height: 300px;
+    height: 250px;
+    border-radius: 50%;
+    grid-column: 1;
+
+}
+
+.resumo {
+    margin: 30px;
+    width: 300px;
+    height: 500px;
+    border-color: solid black;
+    background-color: #c4e2ca;
+    display: flex;
+    flex-direction: column;
+}
+
+.trabalho {
+    width: 330px;
+    height: 30px;
+    background-color: #c4e2ca;
+    margin-top: 5px;
+    display: flex;
+}
+
+.trabalho span {
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.box>.nome {
+    margin-left: 10%;
+    margin-bottom: 10px;
+    grid-column: 1;
+}
+
+.resumo h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+}
+
+.box h6 {
+    margin-left: 17%;
+    font-size: 10px;
+}
+
+.historico {
+    width: 330px;
+    height: 30px;
+    background-color: #c4e2ca;
+    margin-top: 5px;
+    display: flex;
+}
+
+.historico span {
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.box {
+    margin: auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.trabalho {
+    margin-top: 80px;
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.trabalho-filho {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 130px;
+}
+
+
+.historico {
+    margin-top: 25px;
+    grid-column: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+
+}
+
+.historico-filho {
+    grid-column: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    margin-top: 75px;
+}
+
+.box h3 {
+    grid-column: 1;
+}
+
+.box h6 {
+    grid-column: 1;
+}
+
+.resumo {
+    grid-column: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding-left: 5px;
+}
+
+.resumo span {
+    margin-left: 15px;
+    text-align: left;
+}
+
+@media screen and (max-width:1000px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ialan {
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        display: flex;
+    }
+
+    .resumo {
+        height: 350px;
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .nome {
+        display: flex;
+        text-align: center;
+        margin-right: 10%;
+        flex-direction: column;
+    }
+
+    h6{
+        display: flex;
+        text-align: center;
+        margin-right: 18%;
+        flex-direction: column;
+    }
+
+    .historico {
+        width: 308px;
+        display: flex;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .historico-filho {
+        display: flex;
+        margin: auto;
+        margin-top: 4px;
+        flex-direction: column;
+        font-size: 14px;
+        text-align: center;
+    }   
+
+    .trabalho {
+        width: 308px;
+        display: flex;
+        margin:auto;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .trabalho-filho {
+        display: flex;
+        margin: auto;
+        margin-top: 4px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        text-align: center;
+        }
+
+    li {
+        list-style-type: none;
+    }
+}
